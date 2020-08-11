@@ -1,0 +1,47 @@
+body{
+background-color:grey;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.edit{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    flex-direction: column;
+background-color:white ;
+width: 500px;
+height: 600px;
+border: dashed;
+background-color: rgb(241, 245, 241);
+border-radius: 10px;
+}
+p{
+    color: grey;
+}
+h1{
+    color: deeppink;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 2px 2px 5px grey;
+}
+input{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    border-style: dotted;
+}
+button{
+    background-color: deeppink;
+    width: 120px;
+    height: 50px;
+    color: white;
+    box-shadow: 3px 3px 2px grey;
+    border-radius: 15px;
+    border: none;
+}
+button>a:visited,button>a:link{
+    color: white;
+    text-decoration: none;
+font-size:large;
+}
