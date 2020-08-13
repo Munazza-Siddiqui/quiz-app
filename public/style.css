@@ -1,5 +1,5 @@
 body{
-background-color:grey;
+background-color:black;
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -10,7 +10,7 @@ justify-content: space-around;
     align-items: center;
     padding-top: 30px;
     flex-direction: column;
-background-color:white ;
+
 width: 500px;
 height: 600px;
 border: dashed;
@@ -18,10 +18,11 @@ background-color: rgb(241, 245, 241);
 border-radius: 10px;
 }
 p{
-    color: grey;
+    color: silver;
+    font-weight: bold;
 }
 h1{
-    color: deeppink;
+    color: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-shadow: 2px 2px 5px grey;
     font-size: 30pt;
@@ -33,7 +34,7 @@ input{
     border-style: dotted;
 }
 button{
-    background-color: deeppink;
+    background-color: black;
     width: 120px;
     height: 50px;
     color: white;
@@ -42,16 +43,27 @@ button{
     border: none;
 }
 .btn{
-    margin-left: 37%;
-    margin-bottom: 50px;
+    margin: 2% 0% 5% 37%;
+
 }
 button>a:visited,button>a:link{
     color: white;
     text-decoration: none;
 font-size:large;
 }
+.box{
+    background-color: black;
+}
+.black{
+    background-color: black;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    padding-top: 10px;
+    }
 .heading{
-    color: deeppink;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-shadow: 2px 2px 5px grey;
     font-size: 2em;
@@ -62,21 +74,24 @@ font-size:large;
     justify-content: center;
 }
 .question{
+    background-color:  rgb(241, 245, 241);
     border-radius: 10px ;
     border: 2px solid dimgray;
-margin: 0px 20px 0px 20px;
+margin: 10px 20px 10px 20px;
 width: 85%;
 padding-left: 20px;
-font-family: monospace;
+ font-family: 'Courier New', Courier, monospace; 
 }
 .option{
+    background-color:  rgb(241, 245, 241);
     border-radius: 10px ;
     border: 2px solid dimgray;
-margin-top: 10px;
+margin-bottom: 10px;
 margin-left: 20px;
 padding: 20px;
 width: 80%;
 font-family: monospace;
+font-weight: bold;
 }
 .option:hover{
     background-color: silver;
@@ -87,7 +102,7 @@ font-family: monospace;
     flex-direction: column;
 background-color:white ;
 width: 500px;
-height: 600px;
+height: 100%;
 border: dashed;
 background-color: rgb(241, 245, 241);
 border-radius: 10px;
