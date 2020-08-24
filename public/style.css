@@ -5,17 +5,16 @@ align-items: center;
 justify-content: space-around;
 }
 .edit{
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
-    padding-top: 30px;
     flex-direction: column;
-
 width: 500px;
 height: 600px;
 border: dashed;
 background-color: rgb(241, 245, 241);
 border-radius: 10px;
+/* display: none; */
 }
 p{
     color: silver;
@@ -53,10 +52,12 @@ font-size:large;
 }
 .box{
     background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .black{
     background-color: black;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -93,11 +94,11 @@ width: 80%;
 font-family: monospace;
 font-weight: bold;
 }
-.option:hover{
+.active{
     background-color: silver;
 }
 .edited{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 background-color:white ;
@@ -106,4 +107,177 @@ height: 100%;
 border: dashed;
 background-color: rgb(241, 245, 241);
 border-radius: 10px;
+ /* display: none; */
+}
+.edi{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+width: 500px;
+height: 600px;
+border: dashed;
+background-color: rgb(241, 245, 241);
+border-radius: 10px;
+display: none;
+}
+.white{
+    color: white;
+}
+.bg{
+    background-color: rgb(241, 245, 241);
+    width: 100px;
+    height: 100px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: black;
+}
+.text>p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 1em;
+}
+.back{
+    background-color: black;
+width: 100%;
+}
+.cond{
+    display: flex;
+    justify-content: center;
+    
+}
+.para{
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: 12pt;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (max-width: 420px) {
+    .pa{
+       
+        text-align: center;
+        margin-left: 10px;
+    }
+    .size{
+    font-size: 24pt;
+    }
+}
+@media only screen and (max-width: 370px) {
+   .question{
+       width: 80%;
+   }
+    .btn{
+        margin: 2% 0% 5% 31%;
+    
+    }
+.option{
+    width: 75%;
+}   
+}
+
+@media only screen and (max-width: 330px) {
+    .black>img{
+        width: 250px;
+        height: 250px;
+        margin-top: 10px;
+    }
+    .size{
+        font-size: 20pt;
+        }
+}
+@media only screen and (max-width: 280px) {
+    .black>img{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .size{
+        font-size: 18pt;
+        }
+        .black{
+            height: 300px;
+        }
+        .edit{
+            height: 500px;
+        }
+        .heading>h1{
+            font-size: 25pt;
+        }
+        .heading>img{
+            width: 60px;
+            height: 60px;
+        }
+        .question{
+            width: 75%;
+        }
+     .option{
+         width: 70%;
+     }   
+}
+@media only screen and (max-width: 250px) {
+    .size{
+        font-size: 15pt;
+        }
+        .heading>img{
+            width: 55px;
+            height: 55px;
+            margin-right: 15px;
+        }
+        .heading>h1{
+            font-size: 20pt;
+        }
+        .btn{
+            margin: 2% 0% 5% 25%;
+        
+        }
+}
+@media only screen and (max-width: 225px) {
+    .black>img{
+        width: 170px;
+        height: 170px;
+        margin-top: 10px;
+    }
+    .black{
+        height: 280px;
+    }
+    .edit{
+        height: 470px;
+    }
+    .heading>h1{
+        font-size: 18pt;
+    }
+}
+@media only screen and (max-width: 210px) {
+    .size{
+        font-size: 13pt;}
+        
+}
+@media only screen and (max-width: 190px) {
+    .black>img{
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .black{
+        height: 225px;
+    }
+    .edit{
+        height: 400px;
+    }
+    input{
+        width: 70%;
+    }
+    .size{
+        font-size: 10pt;}
+        .pa{
+            font-size: 8pt;
+        }
 }

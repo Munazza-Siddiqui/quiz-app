@@ -2,27 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IQ TEST</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQ TEST</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAikRG2L1BXL04pCTE4J6c_Xx-PXm9qBvU",
+      authDomain: "iq-quizz.firebaseapp.com",
+      databaseURL: "https://iq-quizz.firebaseio.com",
+      projectId: "iq-quizz",
+      storageBucket: "iq-quizz.appspot.com",
+      messagingSenderId: "589322741776",
+      appId: "1:589322741776:web:344748c64559b88a55c295",
+      measurementId: "G-RXSM16FTC0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 </head>
 
 <body>
-    <div class="edit">
-    <div class="black">    <img src="598613909.jpg" alt="" width="300px" height="300px">
- <p> 96% of people can't get more than 6/15 correctly. Can you?</p></div>
-        <h1>TEST YOUR IQ NOW</h1>
-        <input type="text" name="name" id="name" placeholder="Enter your name here.">
-        <br>
-        <button> <a href="start.html"> START</a></button>
+  <div id="first" class="edit">
+    <div class="black"> <img src="598613909.jpg" alt="" width="300px" height="300px">
+      <p class="pa"> 90% of people can't get more than 6/15 correctly. Can you?</p>
+    </div>
+    <h1 class="size">TEST YOUR IQ NOW</h1>
+    <input type="text" name="name" id="name" placeholder="Enter your name here.">
+    <br>
+    <button onclick="set()">START</button>
+
+  </div>
+
+
+  <div id="second" class="edited">
+    <div class="heading">
+      <h1>IQ QUIZ</h1>&nbsp &nbsp
+      <img src="444826_preview.png" width="70px" height="70px" alt="">
+    </div>
+    <div class="box">
+      <div class="question">
+        <h3 id="ques"> </h3>
+      </div>
+      <div class="option" id="opt" onclick="active(this)"> </div>
+      <div class="option" id="opt" onclick="active(this)"></div>
+      <div class="option" id="opt" onclick="active(this)"></div>
+      <div class="option" id="opt" onclick="active(this)"></div>
+    </div>
+    <div> <button id="btn" class="btn" onclick="next()"> <a href="#">NEXT</a> </button></div>
+  </div>
+
+
+
+
+
+  <div id="third" class="edi">
+    <img src="clap.png" alt="" class="bg">
+    <h2 class="cond">CONGRATULATIONS!!</h2>
+    <div class="back">
+
+      <div class="text">
+        <p>HEY! &nbsp;</p>
+        <p id="namee"></p>
+      </div>
+
+      <div class="text">
+        <p>You got &nbsp;</p>
+        <p id="score"></p>
+        <p>&nbsp; Out of &nbsp;15</p>
+      </div>
 
     </div>
 
+    <div>
+      <h2 id="cond" class="cond"></h2>
+      <p id="para" class="para"></p>
+    </div>
+    <button>Continue</button>
+
+  </div>
 
 
 
-    <script src="app.js"></script>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
